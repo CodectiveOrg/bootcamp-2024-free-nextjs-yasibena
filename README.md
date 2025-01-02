@@ -1,6 +1,6 @@
-# Bookify-next app
+# Bookify-next
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Visit [Demo](https://bookify-nextt.vercel.app/) page
 
 ## Getting Started
 

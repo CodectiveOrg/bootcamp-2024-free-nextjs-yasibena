@@ -64,6 +64,10 @@ a {
   text-decoration: none;
 }
 
+.light-mode {
+  color-scheme: light;
+}
+
 body {
   background-color: var(--color-default-background);
   color: var(--color-default-foreground);
@@ -73,6 +77,8 @@ body {
 
   min-block-size: 100vh;
   min-block-size: 100dvh;
+
+  font-size: var(--fz-400);
 
   > * {
     padding-inline: var(--full-width-padding-inline);
@@ -85,4 +91,20 @@ body {
 
     text-align: center;
   }
+}
+
+.light-mode {
+  --color-default-background: hsl(0deg 0% 98%);
+  --color-default-foreground: hsl(0deg 0% 10%);
+  --color-gray-12: #62b2e4;
+  --color-gray-20: #62b2e4;
+  --color-gray-16: #62b2e4;
+  color-scheme: light;
+}
+
+.dark-mode {
+  --color-default-background: hsl(0deg 0% 10%);
+  --color-default-foreground: hsl(0deg 0% 98%);
+  --color-gray-12: hsl(0deg 0% 12%);
+  color-scheme: dark;
 }

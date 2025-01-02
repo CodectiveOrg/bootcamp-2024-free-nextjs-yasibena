@@ -1,6 +1,6 @@
 "use client";
 
-import {useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -22,21 +22,13 @@ export default function HeaderComponent() {
 
   useEffect(() => {
     const root = document.documentElement;
-
     if (lightMode) {
-      root.style.setProperty("--color-default-background", "hsl(0deg 0% 98%)");
-      root.style.setProperty("--color-default-foreground", "hsl(0deg 0% 10%)");
-      root.style.setProperty("--color-gray-12", "#62b2e4");
-      root.style.setProperty("--color-gray-20", "#62b2e4");
-      root.style.setProperty("--color-gray-16", "#62b2e4");
-      root.style.setProperty("color-scheme", "light");
+      root.classList.add("light-mode");
+      root.classList.remove("dark-mode");
     } else {
-      root.style.setProperty("--color-default-background", "hsl(0deg 0% 10%)");
-      root.style.setProperty("--color-default-foreground", "hsl(0deg 0% 98%)");
-      root.style.setProperty("color-scheme", "dark");
-      root.style.setProperty("--color-gray-12", "hsl(0deg 0% 12%)");
+      root.classList.add("dark-mode");
+      root.classList.remove("light-mode");
     }
-    // Save the user's preference in localStorage
     localStorage.setItem("lightMode", lightMode.toString());
   }, [lightMode]);
 

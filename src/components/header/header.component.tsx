@@ -1,6 +1,6 @@
 "use client";
 
-import { ReactElement, useEffect, useState } from "react";
+import {useEffect, useState } from "react";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -10,7 +10,7 @@ import clsx from "clsx";
 import MingcuteDarkModeFill from "@/icons/MingcuteDarkMode";
 import MingcuteLightModeFill from "@/icons/MingcuteLightMode";
 
-export default function HeaderComponent(): ReactElement {
+export default function HeaderComponent() {
   const pathname = usePathname();
   const [lightMode, setLightMode] = useState(() => {
     return localStorage.getItem("lightMode") === "true";

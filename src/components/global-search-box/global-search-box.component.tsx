@@ -1,11 +1,9 @@
-import { ReactElement } from "react";
-
 import MingcuteLocationLine from "@/icons/MingcuteLocationLine";
 import MingcuteSearch3Line from "@/icons/MingcuteSearch3Line";
 
 import styles from "./global-search-box.module.css";
 
-export default function GlobalSearchBoxComponent(): ReactElement {
+export default function GlobalSearchBoxComponent() {
   return (
     <div className={styles["global-search-box"]}>
       <div className={styles.prefix}>

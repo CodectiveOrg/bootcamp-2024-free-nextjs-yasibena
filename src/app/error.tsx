@@ -1,6 +1,4 @@
 "use client";
-
-import { ReactElement } from "react";
 import Image from "next/image";
 import errorImage from "@/assets/illustrations/error.svg";
 import styles from "./error.module.css";
@@ -10,7 +8,7 @@ type Props = {
   reset: () => void;
 };
 
-export default function Error({ error, reset }: Props): ReactElement {
+export default function Error({ error, reset }: Props) {
   return (
     <div className={styles["error"]}>
       <div className={styles.writings}>

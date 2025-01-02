@@ -1,5 +1,3 @@
-import { ReactElement } from "react";
-
 import type { Metadata } from "next";
 import { Vazirmatn } from "next/font/google";
 
@@ -23,7 +21,7 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>): ReactElement {
+}>){
   return (
     <html lang="fa" dir="rtl" className={vazirmatn.className}>
       <body>

@@ -1,17 +1,16 @@
 :root {
-  --color-gray-99: hsl(180, 2%, 23%);
-  --color-gray-97: hsl(202, 77%, 65%);
+  --color-gray-99: hsl(200deg 10% 99%);
+  --color-gray-97: hsl(200deg 10% 97%);
   --color-gray-93: hsl(200deg 10% 93%);
-  --color-gray-98: hsl(0deg 0% 98%);
-  --color-gray-90: hsl(0deg 0% 90%);
-  --color-gray-80: hsl(0deg 0% 80%);
-  --color-gray-70: hsl(0deg 0% 70%);
-  --color-gray-40: hsl(0deg 0% 40%);
-  --color-gray-30: hsl(0deg 0% 30%);
-  --color-gray-20: hsl(0deg 0% 20%);
-  --color-gray-16: hsl(0deg 0% 16%);
-  --color-gray-12: hsl(0deg 0% 12%);
-  --color-gray-10: hsl(0deg 0% 10%);
+  --color-gray-90: hsl(200deg 10% 93%);
+  --color-gray-80: hsl(200deg 10% 80%);
+  --color-gray-70: hsl(200deg 10% 70%);
+  --color-gray-40: hsl(200deg 10% 40%);
+  --color-gray-30: hsl(200deg 10% 30%);
+  --color-gray-20: hsl(200deg 10% 20%);
+  --color-gray-16: hsl(200deg 10% 16%);
+  --color-gray-12: hsl(200deg 10% 12%);
+  --color-gray-10: hsl(200deg 10% 10%);
 
   --color-surface-300: var(--color-gray-93);
   --color-surface-400: var(--color-gray-97);
@@ -43,8 +42,11 @@
   --color-danger-lighter: hsl(10deg 80% 52%);
   --color-danger-darker: hsl(10deg 80% 44%);
   --color-danger-opposite: var(--color-gray-99);
+
   --color-star: hsl(50deg 100% 50%);
+
   --color-border: var(--color-gray-80);
+
   --shadow-300: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-400: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --shadow-500: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -126,11 +128,10 @@ body {
 .light-mode {
   --color-default-background: hsl(0deg 0% 98%);
   --color-default-foreground: hsl(0deg 0% 10%);
-  --color-gray-12: #4cabe6;
-  --color-gray-20: #4cabe6;
-  --color-gray-16: #c3e0f4;
-  --color-primary: #62b2e4;
-  /* --color-surface-700:#292929; */
+  --color-gray-12: hsl(203, 75%, 60%);
+  --color-gray-20: hsl(203, 75%, 60%);
+  --color-gray-16: hsl(202, 67%, 86%);
+  --color-primary: hsl(203, 71%, 64%);
   color-scheme: light;
 }
 

@@ -39,12 +39,7 @@ export default async function page({
               <CategoryFilterComponent />
               <GenreFilterComponent />
               <FormatFilterComponent />
-              {/* <PriceFilterComponent /> */}
             </div>
-            {/* 
-          <div className={styles.toolbar}>
-            <div className={styles.stats}></div>
-          </div> */}
             <div className={styles.results}>
               <SortComponent />
               <div className={styles.stats}>
@@ -72,7 +67,7 @@ function generateDefaultFilters(searchParams: SearchParams): FilterType {
 }
 
 function normalizedFilter(
-  value: string | string[] | undefined,
+  value: string | string[] | undefined
 ): string | undefined {
   if (Array.isArray(value)) {
     return value[0];

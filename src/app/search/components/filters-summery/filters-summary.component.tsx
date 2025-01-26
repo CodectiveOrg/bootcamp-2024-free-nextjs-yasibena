@@ -58,11 +58,6 @@ export default function FiltersSummaryComponent() {
               {filters.format}
             </li>
           )}
-          {/* {filters.degree && (
-            <li onClick={() => filterClickHandler("price")}>
-              {filters.degree}
-            </li>
-          )} */}
         </ul>
       </div>
     </CardComponent>

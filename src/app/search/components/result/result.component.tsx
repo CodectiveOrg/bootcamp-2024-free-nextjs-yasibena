@@ -21,7 +21,7 @@ export default function ResultsComponent(): ReactElement {
           <div className={styles.header}>
             <div className={styles.image}>
               <img
-                src={book?.image}
+                src={book.image}
                 alt="عکس کتاب موردنظر"
                 width={150}
                 height={150}
@@ -30,7 +30,7 @@ export default function ResultsComponent(): ReactElement {
             <div className={styles.name}>{book.name}</div>
             <div className={styles.brief}>{book.brief}</div>
             <div className={styles.badges}>
-              {(book?.category || []).map((each) => (
+              {book?.category?.map((each) => (
                 <div key={each} className={styles.badge}>
                   {each}
                 </div>

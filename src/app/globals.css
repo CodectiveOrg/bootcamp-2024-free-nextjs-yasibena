@@ -125,7 +125,7 @@ body {
   }
 }
 
-.light-mode {
+[data-theme="light"] {
   --color-default-background: hsl(0deg 0% 98%);
   --color-default-foreground: hsl(0deg 0% 10%);
   --color-gray-12: hsl(203, 75%, 60%);
@@ -135,7 +135,7 @@ body {
   color-scheme: light;
 }
 
-.dark-mode {
+[data-theme="dark"] {
   --color-default-background: hsl(0deg 0% 10%);
   --color-default-foreground: hsl(0deg 0% 98%);
   --color-gray-12: hsl(0deg 0% 12%);

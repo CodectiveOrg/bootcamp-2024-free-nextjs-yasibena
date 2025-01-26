@@ -28,11 +28,9 @@ export default function HeaderComponent() {
     if (typeof window !== "undefined") {
       const root = document.documentElement;
       if (lightMode) {
-        root.classList.add("light-mode");
-        root.classList.remove("dark-mode");
+        root.setAttribute("data-theme", "light");
       } else {
-        root.classList.add("dark-mode");
-        root.classList.remove("light-mode");
+        root.setAttribute("data-theme", "dark");
       }
       localStorage.setItem("lightMode", lightMode.toString());
     }

@@ -36,7 +36,7 @@
     img {
       block-size: 100%;
       inline-size: auto;
-       mix-blend-mode:multiply;
+      mix-blend-mode: multiply;
     }
   }
 

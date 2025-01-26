@@ -22,7 +22,7 @@
   --color-default-background: var(--color-gray-10);
   --color-default-foreground: var(--color-gray-98);
 
-  --color-primary: 	hsl(250, 100%, 86%);
+  --color-primary: hsl(250, 100%, 86%);
   --color-primary-fade: hsl(250, 100%, 94%);
   --color-primary-lighter: hsl(196, 100%, 95%);
   --color-primary-darker: hsl(250, 100%, 86%);
@@ -126,10 +126,10 @@ body {
 }
 
 [data-theme="light"] {
-  --color-default-background: 	hsl(0, 0%, 98%);
+  --color-default-background: hsl(0, 0%, 98%);
   --color-default-foreground: hsl(0deg 0% 10%);
-  --color-gray-12: 	hsl(250, 100%, 86%);
-  --color-gray-20: 	hsla(250, 100%, 86%, 0.407);
+  --color-gray-12: hsl(250, 100%, 86%);
+  --color-gray-20: hsla(250, 100%, 86%, 0.407);
   --color-gray-16: hsl(0, 0%, 100%, 86%);
   --color-primary: hsl(250, 100%, 86%);
   color-scheme: light;

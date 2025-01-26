@@ -1,7 +1,7 @@
 .filters-summary {
   .deleteButton {
     display: flex;
-    background-color: #ff4757; 
+    background-color: #ff4757;
     color: #ffffff;
     border: none;
     border-radius: var(--border-radius);

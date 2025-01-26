@@ -67,7 +67,7 @@ function generateDefaultFilters(searchParams: SearchParams): FilterType {
 }
 
 function normalizedFilter(
-  value: string | string[] | undefined
+  value: string | string[] | undefined,
 ): string | undefined {
   if (Array.isArray(value)) {
     return value[0];

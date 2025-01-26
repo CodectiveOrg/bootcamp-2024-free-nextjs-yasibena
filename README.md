@@ -1,6 +1,6 @@
 # Bookify-next
 
-Visit [Demo](https://bookify-nextt.vercel.app/) page
+Visit [Demo](https://bookify-nextt-gl1y26ptq-yasis-projects.vercel.app/) page
 
 ## Getting Started
 

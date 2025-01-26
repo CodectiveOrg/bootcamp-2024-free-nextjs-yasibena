@@ -2,4 +2,5 @@
   background: var(--color-gray-16);
   padding: 1rem;
   border-radius: var(--border-radius);
+  background: hsla(250, 100%, 88%, 0.253);
 }

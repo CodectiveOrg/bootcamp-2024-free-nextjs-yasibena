@@ -19,7 +19,7 @@ export default function FormatFilterComponent(): ReactElement {
       name="format"
       options={[
         { value: "صوتی", label: "صوتی" },
-        { value: "کتاب الکترونیکی", label: "عاشقانه" },
+        { value: "کتاب الکترونیکی", label: "کتاب الکترونیکی" },
         { value: "چاپی", label: "چاپی" },
       ]}
       value={filters?.genre}

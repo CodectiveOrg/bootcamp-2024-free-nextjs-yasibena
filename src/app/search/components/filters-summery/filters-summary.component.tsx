@@ -35,30 +35,39 @@ export default function FiltersSummaryComponent() {
   return (
     <CardComponent>
       <div className={styles["filters-summary"]}>
-        <div className={styles.title}>فیلترهای انتخاب‌شده</div>
-
-        <button type="button" onClick={removeAllButtonClickHandler}>
+        <div
+          className={styles.deleteButton}
+          onClick={removeAllButtonClickHandler}
+        >
           حذف همه
-        </button>
+        </div>
 
-        <ul className={styles.filters}>
-          {filters.query && (
-            <li onClick={() => filterClickHandler("query")}>{filters.query}</li>
-          )}
-          {filters.genre && (
-            <li onClick={() => filterClickHandler("genre")}>{filters.genre}</li>
-          )}
-          {filters.category && (
-            <li onClick={() => filterClickHandler("category")}>
-              {filters.category}
-            </li>
-          )}
-          {filters.format && (
-            <li onClick={() => filterClickHandler("format")}>
-              {filters.format}
-            </li>
-          )}
-        </ul>
+        <div className={styles["bottom-container"]}>
+          <div className={styles.title}>فیلترهای انتخاب‌شده:</div>
+
+          <ul className={styles.filters}>
+            {filters.query && (
+              <li onClick={() => filterClickHandler("query")}>
+                {filters.query}
+              </li>
+            )}
+            {filters.genre && (
+              <li onClick={() => filterClickHandler("genre")}>
+                {filters.genre}
+              </li>
+            )}
+            {filters.category && (
+              <li onClick={() => filterClickHandler("category")}>
+                {filters.category}
+              </li>
+            )}
+            {filters.format && (
+              <li onClick={() => filterClickHandler("format")}>
+                {filters.format}
+              </li>
+            )}
+          </ul>
+        </div>
       </div>
     </CardComponent>
   );

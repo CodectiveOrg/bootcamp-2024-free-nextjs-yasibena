@@ -13,7 +13,7 @@
   --color-gray-10: hsl(200deg 10% 10%);
 
   --color-surface-300: var(--color-gray-93);
-  --color-surface-400: var(--color-gray-97);
+  --color-surface-400: var(--color-primary-fade);
   --color-surface-700: var(--color-gray-16);
 
   --color-text-400: var(--color-gray-10);
@@ -22,10 +22,10 @@
   --color-default-background: var(--color-gray-10);
   --color-default-foreground: var(--color-gray-98);
 
-  --color-primary: hsl(203, 71%, 64%);
-  --color-primary-fade: hsl(335deg 71% 94%);
-  --color-primary-lighter: hsl(180, 71%, 68%);
-  --color-primary-darker: hsl(187, 71%, 60%);
+  --color-primary: 	hsl(250, 100%, 86%);
+  --color-primary-fade: hsl(250, 100%, 94%);
+  --color-primary-lighter: hsl(196, 100%, 95%);
+  --color-primary-darker: hsl(250, 100%, 86%);
   --color-primary-opposite: var(--color-gray-10);
 
   --border-radius: 0.875rem;
@@ -126,12 +126,12 @@ body {
 }
 
 [data-theme="light"] {
-  --color-default-background: hsl(0deg 0% 98%);
+  --color-default-background: 	hsl(0, 0%, 98%);
   --color-default-foreground: hsl(0deg 0% 10%);
-  --color-gray-12: hsl(203, 75%, 60%);
-  --color-gray-20: hsl(203, 75%, 60%);
-  --color-gray-16: hsl(202, 67%, 86%);
-  --color-primary: hsl(203, 71%, 64%);
+  --color-gray-12: 	hsl(250, 100%, 86%);
+  --color-gray-20: 	hsla(250, 100%, 86%, 0.407);
+  --color-gray-16: hsl(0, 0%, 100%, 86%);
+  --color-primary: hsl(250, 100%, 86%);
   color-scheme: light;
 }
 

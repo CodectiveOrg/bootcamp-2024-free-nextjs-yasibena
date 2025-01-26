@@ -31,6 +31,8 @@
         img {
           inline-size: auto;
           object-fit: cover;
+          background-color: transparent;
+
         }
       }
 
@@ -69,6 +71,16 @@
           padding: 0.25rem 0.75rem;
 
           border-radius: var(--border-radius);
+
+          place-items: center;
+
+          height: 0;
+
+          min-height: 40px;
+
+          color:#000;
+
+          font-weight: 600;
         }
       }
     }

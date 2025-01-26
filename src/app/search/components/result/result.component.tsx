@@ -25,6 +25,7 @@ export default function ResultsComponent(): ReactElement {
                 alt="عکس کتاب موردنظر"
                 width={150}
                 height={150}
+                style={{ backgroundColor: "transparent" }}
               />
             </div>
             <div className={styles.name}>{book.name}</div>

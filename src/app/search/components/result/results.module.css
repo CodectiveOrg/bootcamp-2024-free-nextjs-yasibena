@@ -54,7 +54,6 @@
         font-size: var(--fz-300);
 
         text-overflow: ellipsis;
-        /* text-wrap: nowrap; */
 
         color: var(--color-text-700);
       }
@@ -82,10 +81,7 @@
 
       overflow: hidden;
 
-      /* max-inline-size: 100%; */
-      margin-top: auto;
-      /* text-overflow: ellipsis; */
-      /* text-wrap: nowrap; */
+      margin-block-start: auto;
 
       svg {
         margin-block-end: -0.25em;

@@ -9,7 +9,7 @@ export const books: BookModel[] = [
     year: 389,
     format: "چاپی",
     genre: "حماسی",
-    category: ["کلاسیک"],
+    categories: ["کلاسیک"],
     author: "فردوسی",
     price: "740000",
     inStock: true,
@@ -18,6 +18,26 @@ export const books: BookModel[] = [
     rating: 4.8,
     amount: 100,
     totalVotes: 250,
+    comments: [
+      {
+        name: "ali",
+        stars: 5,
+        date: "2025-01-21T12:34:56.789Z",
+        description: "کتاب فوق‌العاده‌ای است و من خیلی از مطالعه آن لذت بردم.",
+      },
+      {
+        name: "yasi",
+        stars: 4,
+        date: "2025-05-21T12:34:56.789Z",
+        description: "داستان‌های شاهنامه همیشه جذاب و آموزنده‌اند.",
+      },
+      {
+        name: "hossein",
+        stars: 3,
+        date: "2025-01-21T12:34:56.789Z",
+        description: "کتاب خوبی است، اما برخی بخش‌ها کمی طولانی بود.",
+      },
+    ],
   },
   {
     id: "2",
@@ -27,7 +47,7 @@ export const books: BookModel[] = [
     year: 559,
     format: "چاپی",
     genre: "عاشقانه",
-    category: ["حماسه عاشقانه", "کلاسیک"],
+    categories: ["حماسه عاشقانه", "کلاسیک"],
     author: "نظامی گنجوی",
     price: "520000",
     inStock: true,
@@ -36,6 +56,28 @@ export const books: BookModel[] = [
     rating: 4.7,
     amount: 80,
     totalVotes: 180,
+    comments: [
+      {
+        name: "ali",
+        stars: 5,
+        date: "2025-01-21T12:34:56.789Z",
+        description:
+          "عشق و زیبایی در این کتاب به بهترین شکل به تصویر کشیده شده است.",
+      },
+      {
+        name: "yasi",
+        stars: 4,
+        date: "2025-05-21T12:34:56.789Z",
+        description:
+          "داستان عاشقانه خوبی است، اما انتهای آن کمی تکراری به نظر می‌رسد.",
+      },
+      {
+        name: "hossein",
+        stars: 3,
+        date: "2025-01-21T12:34:56.789Z",
+        description: "کتاب جالبی است، اما برخی از قسمت‌ها خیلی کشدار است.",
+      },
+    ],
   },
   {
     id: "3",
@@ -44,7 +86,7 @@ export const books: BookModel[] = [
     year: 1315,
     format: "چاپی",
     genre: "سوررئالیسم",
-    category: ["رمان", "مدرن"],
+    categories: ["رمان", "مدرن"],
     author: "صادق هدایت",
     price: "720000",
     inStock: false,
@@ -53,6 +95,28 @@ export const books: BookModel[] = [
     rating: 4.6,
     amount: 50,
     totalVotes: 200,
+    comments: [
+      {
+        name: "ali",
+        stars: 5,
+        date: "2025-01-21T12:34:56.789Z",
+        description:
+          "کتاب بسیار تاثیرگذاری است، حس تنهایی و سرگشتگی را به خوبی منتقل می‌کند.",
+      },
+      {
+        name: "yasi",
+        stars: 4,
+        date: "2025-05-21T12:34:56.789Z",
+        description: "سبک نوشتاری خاص و جذاب است، ولی پایان آن کمی مبهم است.",
+      },
+      {
+        name: "hossein",
+        stars: 3,
+        date: "2025-01-21T12:34:56.789Z",
+        description:
+          "این کتاب به نوعی سنگین و فلسفی است، ممکن است برای همه جذاب نباشد.",
+      },
+    ],
   },
   {
     id: "4",
@@ -62,7 +126,7 @@ export const books: BookModel[] = [
     year: 1331,
     format: "چاپی",
     genre: "عاشقانه-سیاسی",
-    category: ["رمان", "مدرن"],
+    categories: ["رمان", "مدرن"],
     author: "بزرگ علوی",
     price: "580000",
     inStock: true,
@@ -71,6 +135,29 @@ export const books: BookModel[] = [
     rating: 4.7,
     amount: 85,
     totalVotes: 190,
+    comments: [
+      {
+        name: "ali",
+        stars: 5,
+        date: "2025-01-21T12:34:56.789Z",
+        description:
+          "اثر بسیار برجسته‌ای است که مسائل اجتماعی و سیاسی را به خوبی با هم ترکیب می‌کند.",
+      },
+      {
+        name: "yasi",
+        stars: 4,
+        date: "2025-05-21T12:34:56.789Z",
+        description:
+          "کتاب جذابی است، اما برخی از قسمت‌های آن نیاز به تمرکز بیشتری دارد.",
+      },
+      {
+        name: "hossein",
+        stars: 3,
+        date: "2025-01-21T12:34:56.789Z",
+        description:
+          "داستان جالبی بود، اما پیچیدگی‌های سیاسی آن را کمی سخت‌فهم می‌کند.",
+      },
+    ],
   },
   {
     id: "5",
@@ -80,7 +167,7 @@ export const books: BookModel[] = [
     year: 555,
     format: "چاپی",
     genre: "عرفانی",
-    category: ["صوفیانه", "کلاسیک"],
+    categories: ["صوفیانه", "کلاسیک"],
     author: "عطار نیشابوری",
     price: "600000",
     inStock: true,
@@ -89,6 +176,28 @@ export const books: BookModel[] = [
     rating: 4.9,
     amount: 120,
     totalVotes: 300,
+    comments: [
+      {
+        name: "ali",
+        stars: 5,
+        date: "2025-01-21T12:34:56.789Z",
+        description:
+          "این کتاب بسیار آموزنده است و به مفاهیم عمیق عرفانی می‌پردازد.",
+      },
+      {
+        name: "yasi",
+        stars: 4,
+        date: "2025-05-21T12:34:56.789Z",
+        description: "داستانی زیبا با پیامی عمیق که باعث تفکر می‌شود.",
+      },
+      {
+        name: "hossein",
+        stars: 3,
+        date: "2025-01-21T12:34:56.789Z",
+        description:
+          "کتاب خوب است، ولی برای درک بهتر نیاز به مطالعه دقیق‌تر دارد.",
+      },
+    ],
   },
   {
     id: "6",
@@ -98,15 +207,38 @@ export const books: BookModel[] = [
     year: 626,
     format: "چاپی",
     genre: "عرفانی",
-    category: ["صوفیانه", "کلاسیک"],
+    categories: ["صوفیانه", "کلاسیک"],
     author: "مولوی",
     price: "780000",
-    inStock: true,
+    inStock: false,
     brief:
       "دیوان شمس تبریزی، مجموعه‌ای از اشعار مولوی است که به شمس تبریزی، استاد روحانی او تقدیم شده است. این اثر شامل غزلیات عاشقانه و عارفانه است که مضامینی چون عشق الهی، وحدت وجود و معنای زندگی را بررسی می‌کند. مولوی در این دیوان با زبانی پرشور و شاعرانه، عمیق‌ترین مفاهیم عرفانی را بیان کرده است. دیوان شمس تبریزی یکی از مهم‌ترین آثار ادبیات فارسی و عرفان اسلامی است.",
     rating: 4.8,
     amount: 90,
     totalVotes: 220,
+    comments: [
+      {
+        name: "ali",
+        stars: 5,
+        date: "2025-01-21T12:34:56.789Z",
+        description:
+          "دیوانی پر از اشعار عاشقانه و عرفانی که حقیقت را نمایان می‌کند.",
+      },
+      {
+        name: "yasi",
+        stars: 4,
+        date: "2025-05-21T12:34:56.789Z",
+        description:
+          "اشعار مولوی همیشه تاثیرگذار هستند، به خصوص در زمینه عرفان.",
+      },
+      {
+        name: "hossein",
+        stars: 3,
+        date: "2025-01-21T12:34:56.789Z",
+        description:
+          "کتاب زیبا است، ولی برای فهم بهتر نیاز به مطالعه عمیق‌تری دارد.",
+      },
+    ],
   },
   {
     id: "7",
@@ -116,7 +248,7 @@ export const books: BookModel[] = [
     year: 1346,
     format: "چاپی",
     genre: "کودکانه",
-    category: ["کودک", "مدرن"],
+    categories: ["کودک", "مدرن"],
     author: "صمد بهرنگی",
     price: "430000",
     inStock: true,
@@ -125,5 +257,28 @@ export const books: BookModel[] = [
     rating: 4.6,
     amount: 150,
     totalVotes: 300,
+    comments: [
+      {
+        name: "ali",
+        stars: 5,
+        date: "2025-01-21T12:34:56.789Z",
+        description:
+          "داستان بسیار آموزنده‌ای است که مفاهیم آزادی و تغییر را به خوبی بیان می‌کند.",
+      },
+      {
+        name: "yasi",
+        stars: 4,
+        date: "2025-05-21T12:34:56.789Z",
+        description:
+          "کتاب جالبی است که مفاهیم فلسفی را برای کودکان به خوبی بیان می‌کند.",
+      },
+      {
+        name: "hossein",
+        stars: 3,
+        date: "2025-01-21T12:34:56.789Z",
+        description:
+          "کتاب خوبی است، اما ممکن است برای برخی افراد مفاهیم آن کمی پیچیده باشد.",
+      },
+    ],
   },
 ];

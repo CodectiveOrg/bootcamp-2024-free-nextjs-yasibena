@@ -1,0 +1,46 @@
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+
+  backdrop-filter: blur(3px);
+
+  .particles {
+    position: relative;
+
+    width: 100px;
+    height: 100px;
+
+    .particle {
+      position: absolute;
+
+      top: 50%;
+      left: 50%;
+      width: 10px;
+
+      height: 10px;
+
+      background-color: var(--color-gray-10);
+
+      border-radius: 50%;
+
+      transform: translate(-50%, -50%) rotate(var(--angle)) translate(50px);
+      animation: pulse var(--duration) infinite ease-in-out;
+      animation-delay: var(--delay);
+    }
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) rotate(var(--angle)) translate(50px)
+      scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(var(--angle)) translate(50px)
+      scale(1.5);
+  }
+}

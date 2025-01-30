@@ -14,10 +14,12 @@ export default function HeaderComponent() {
   const pathname = usePathname();
 
   const [lightMode, setLightMode] = useState(() => {
-    if (typeof window !== "undefined") {
-      return localStorage.getItem("lightMode") === "true";
+    if (typeof window === "undefined") {
+      return true;
     }
-    return false;
+
+    const savedTheme = localStorage.getItem("lightMode");
+    return savedTheme ? savedTheme === "true" : true;
   });
 
   const toggleMode = () => {

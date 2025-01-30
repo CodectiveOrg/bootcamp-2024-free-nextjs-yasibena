@@ -8,13 +8,13 @@ export default function CategoryFilterComponent() {
   const { filters, dispatchFilters } = useContext(FiltersContext);
 
   const changeHandler = (value: string): void => {
-    dispatchFilters({ type: "updated_filter", key: "category", value });
+    dispatchFilters({ type: "updated_filter", key: "categories", value });
   };
 
   return (
     <RadioFilterComponent
       title="دسته بندی ها"
-      name="category"
+      name="categories"
       options={[
         { value: "کلاسیک", label: "کلاسیک" },
         { value: "مدرن", label: "مدرن" },
@@ -24,7 +24,7 @@ export default function CategoryFilterComponent() {
         { value: "صوفیانه", label: "صوفیانه" },
         { value: "کودک", label: "کودک" },
       ]}
-      value={filters?.category}
+      value={filters?.categories}
       onChange={changeHandler}
     />
   );

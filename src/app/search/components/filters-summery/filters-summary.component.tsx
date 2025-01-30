@@ -14,7 +14,7 @@ export default function FiltersSummaryComponent() {
     return (
       !filters?.query &&
       !filters?.genre &&
-      !filters?.category &&
+      !filters?.categories &&
       !filters?.format &&
       !filters?.price
     );
@@ -56,9 +56,9 @@ export default function FiltersSummaryComponent() {
                 {filters.genre}
               </li>
             )}
-            {filters.category && (
-              <li onClick={() => filterClickHandler("category")}>
-                {filters.category}
+            {filters.categories && (
+              <li onClick={() => filterClickHandler("categories")}>
+                {filters.categories}
               </li>
             )}
             {filters.format && (
